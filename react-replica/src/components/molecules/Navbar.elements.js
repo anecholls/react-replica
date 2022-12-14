@@ -6,7 +6,7 @@ height: 88px;
 position: sticky;
 top: 0;
 z-index: 99;
-background-color: black; 
+background-color: #2F303A; 
 `;
 
 export const NavbarWrapped = styled.div`
@@ -18,5 +18,14 @@ align-items: center;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-border: 1px solid yellow;
+`;
+
+export const IconLogo = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+font-family: Poppins;
+font-size: 1.2rem;
+color: white;
 `;
