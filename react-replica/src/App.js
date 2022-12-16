@@ -1,10 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Navbar from './components/molecules/Navbar';
+import Home from './pages/Home';
+import Join from './pages/Join';
+import Discover from './pages/Discover';
+import Error from './pages/Error';
 
 function App() {
   return (
+    <div className = "App">
+<Router>
   <Navbar/>
+  <Routes>
+    <Route path="/" element ={<Home/>}/>
+    <Route path="discover" element ={<Discover/>}/>
+    <Route path="join" element ={<Join/>}/>
+    <Route path="#" element ={<Error/>}/>
+  </Routes>
+
+</Router>
+</div>
+  
+
+
+
   );
 }
 
